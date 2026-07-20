@@ -7,20 +7,28 @@ from sklearn.metrics.pairwise import cosine_similarity
 from dotenv import load_dotenv
 import os
 
+st.write("App started")
 load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
-
+st.write("Loading movie list")
 movies = pickle.load(open('movie_list.pkl','rb'))
+st.write("Movie list loaded")
+
+st.write("Creating vectors")
+
 cv = CountVectorizer(
     max_features=5000,
     stop_words="english"
 )
 
+st.write("Computing similarity")
+
 vector = cv.fit_transform(movies["tags"]).toarray()
 
 similarity = cosine_similarity(vector)
 
+st.write("Similarity computed")
 
 def fetch_poster(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&language=en-US"
