@@ -1,10 +1,10 @@
-services:
-  - type: web
-    name: movie_recommender_system
-    runtime: python
+# services:
+#   - type: web
+#     name: movie_recommender_system
+#     runtime: python
 
-    buildCommand: |
-      pip install -r requirements.txt
+#     buildCommand: |
+#       pip install -r requirements.txt
 
-    startCommand: |
-      streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
+#     startCommand: |
+#       streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
