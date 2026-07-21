@@ -1,6 +1,6 @@
-# 📚 Book Recommender System
+# 📚 Movie Recommender System
 
-An intelligent **Content-Based Book Recommendation System** built using **Python, Pandas, Scikit-Learn, Streamlit, and TMDb API**. The application recommends books similar to the selected book by analyzing textual features using **Natural Language Processing (NLP)** and **Cosine Similarity**.
+An intelligent **Content-Based Movie Recommendation System** built using **Python, Pandas, Scikit-Learn, Streamlit, and TMDb API**. The application recommends Movies similar to the selected Movie by analyzing textual features using **Natural Language Processing (NLP)** and **Cosine Similarity**.
 
 The application is deployed as an interactive web application using **Streamlit**.
 
@@ -17,8 +17,8 @@ https://book-recommender-system-jmlq.onrender.com/
 ## Features
 
 - Content-Based Recommendation System
-- Recommends Top 5 similar books
-- Displays Book Posters using TMDb API
+- Recommends Top 5 similar Movies
+- Displays Movie Posters using TMDb API
 - Interactive Streamlit User Interface
 - NLP-based Feature Engineering
 - Cosine Similarity based Recommendation Engine
@@ -208,7 +208,7 @@ Return Top 5 recommendations.
 # Project Structure
 
 ```
-Book_Recommender_System/
+Movie_Recommender_System/
 
 │── app.py
 │── movie_list.pkl
@@ -232,7 +232,7 @@ git clone https://github.com/dnyaneshwarmagar/book_recommender_system.git
 Move into the project directory
 
 ```bash
-cd book_recommender_system
+cd movie_recommender_system
 ```
 
 Create virtual environment
